@@ -1,3 +1,5 @@
+![todoweb](https://github.com/AugustineTamba/Todo-List/assets/51299834/403a350c-49d7-41a0-8a7f-e86d6c21ff93)
+
 # Todo-List
 1. User Registration: Users can create an account by entering their name and other necessary details. This allows for personalized todo list management.
 
@@ -11,4 +13,3 @@
 
 User-Friendly Interface: The website offers an intuitive and user-friendly interface, making it easy for users to navigate, add tasks, and manage their todo lists efficiently.
 Overall, this todo website provides a simple and efficient solution for users to enter their name, create and organize their tasks into personal and business categories, and easily edit or delete tasks as needed. It enhances productivity by providing a centralized platform for managing and tracking tasks effectively.
-![todoweb](https://github.com/AugustineTamba/Todo-List/assets/51299834/543950d5-20c2-4772-9ec4-9cbcf9f8741a)
