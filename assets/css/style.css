@@ -1,0 +1,272 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap');
+
+:root {
+    --primary-color: #d27241;
+    --business-color: #2c98bf;
+    --personal-color: var(--primary-color);
+    --white-color: #fff;
+    --light-color: #eee;
+    --grey-color: #888;
+    --dark-color: #1a1310;
+    --danger-color: #f82622;
+    --box-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
+    --business-glow: 0px 0px 4px rgba(44, 152, 191, 1);
+    --personal-glow: 0px 0px 4px rgba(210, 114, 65, 1);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* when input is not a radio and is not a type of checkbox and button */
+input:not([type="radio"]):not([type="checkbox"]),
+button {
+    appearance: none;
+    border: none;
+    outline: none;
+    background: none;
+    cursor: initial;
+}
+
+body {
+    background: var(--light-color);
+    color: var(--dark-color);
+}
+
+section {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+}
+
+h3 {
+    color: var(--dark-color);
+    font-size: 1.25rem;
+    font-weight: 400;
+    text-transform: uppercase;
+    margin-bottom: 0.5rem;
+}
+
+h4 {
+    color: var(--grey-color);
+    font-size: 0.9rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+}
+
+.greeting .title {
+    display: flex;
+}
+
+.greeting .title input {
+    margin-left: 0.5rem;
+    flex: 1 1 0%;
+    min-width: 0;
+}
+
+.greeting .title,
+.greeting .title input {
+    color: var(--dark-color);
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.create-todo input[type="text"] {
+    display: block;
+    width: 100%;
+    font-size: 1.13rem;
+    padding: 1rem 1.5rem;
+    color: var(--dark-color);
+    background-color: var(--white-color);
+    border-radius: 0.5rem;
+    box-shadow: var(--box-shadow);
+    margin-bottom: 1.5rem;
+}
+
+.create-todo .options {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.create-todo .options label {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1.5rem;
+    background-color: var(--white-color);
+    border-radius: 0.5rem;
+    box-shadow: var(--box-shadow);
+    cursor: pointer;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+    display: none;
+}
+
+.bubble {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border: 2px solid var(--business-color);
+    box-shadow: var(--business-glow);
+}
+
+.bubble.personal {
+    border: 2px solid var(--personal-color);
+    box-shadow: var(--personal-glow);
+}
+
+/* add in a extra element in the bubble */
+.bubble::after {
+    content: "";
+    display: block;
+    opacity: 0;
+    width: 0px;
+    height: 0px;
+    background-color: var(--business-color);
+    box-shadow: var(--business-glow);
+    border-radius: 50%;
+    transition: 0.2s ease-in-out;
+}
+
+.bubble.personal::after {
+    background-color: var(--personal-color);
+    box-shadow: var(--personal-glow);
+}
+
+/* if input checked is next to (~) a bubble element - which it the light in the center of the check */
+input:checked~.bubble::after {
+    width: 10px;
+    height: 10px;
+    opacity: 1;
+}
+
+.create-todo .options label div {
+    font-size: 1.2rem;
+    margin-top: 1rem;
+}
+
+.create-todo input[type="submit"] {
+    display: block;
+    width: 100%;
+    font-size: 1.2rem;
+    padding: 1rem 1.5rem;
+    color: var(--white-color);
+    background-color: var(--primary-color);
+    border-radius: 0.5rem;
+    box-shadow: var(--personal-glow);
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+}
+
+.create-todo input[type="submit"]:hover {
+    opacity: 0.75;
+}
+
+.todo-list .list {
+    margin: 1rem 0;
+}
+
+.todo-list .todo-item {
+    display: flex;
+    align-items: center;
+    background-color: var(--white-color);
+    padding: 1rem;
+    border-radius: 0.5rem;
+    box-shadow: var(--box-shadow);
+    margin-bottom: 1rem;
+}
+
+.todo-list label {
+    display: block;
+    margin-right: 1rem;
+    cursor: pointer;
+}
+
+.todo-item .todo-content {
+    flex: 1 1 0%;
+}
+
+.todo-item .todo-content input {
+    color: var(--dark-color);
+    font-size: 1rem;
+}
+
+.todo-item .actions {
+    display: flex;
+    align-items: center;
+}
+
+.todo-item .actions button {
+    display: block;
+    padding: 0.5rem;
+    border-radius: 0.3rem;
+    color: var(--white-color);
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+}
+
+.todo-item .actions button:hover {
+    opacity: 0.75;
+}
+
+.todo-item .actions .edit {
+    margin-right: 0.5rem;
+    background-color: var(--primary-color);
+}
+
+.todo-item .actions .delete {
+    background-color: var(--danger-color);
+}
+
+/* if the todo item is done we are going to get the
+content input and say text-decoration line through and grey */
+.todo-item.done .todo-content input {
+    text-decoration: line-through;
+    color: var(--grey-color);
+}
+
+@media screen and (max-width: 395px) {
+    .todo-item .actions button {
+        padding: 0.5rem;
+    }
+
+    .todo-item .actions .edit {
+        /* margin-right: 0.3rem; */
+        transform: translateX(-2.5rem); /* Move the button 0.5rem to the left */
+        /* margin-bottom: 0.5rem; */
+    }
+
+    .todo-item .actions .delete {
+        transform: translateX(-2.5rem); /* Move the button 0.5rem to the left */
+        /* margin-bottom: 0.5rem; */
+    }
+}
+
+@media screen and (max-width: 360px) {
+    .todo-item .actions button {
+        padding: 0.5rem;
+    }
+
+    .todo-item .actions .edit {
+        /* margin-right: 0.3rem; */
+        transform: translateX(-3.3rem); /* Move the button 0.5rem to the left */
+        /* margin-bottom: 0.5rem; */
+    }
+
+    .todo-item .actions .delete {
+        transform: translateX(-3.3rem); /* Move the button 0.5rem to the left */
+        /* margin-bottom: 0.5rem; */
+    }
+}
