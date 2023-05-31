@@ -3,18 +3,48 @@
 
 View the project here: www.augustine-todo.42web.io
 
-# Todo-List
-1. User Registration: Users can create an account by entering their name and other necessary details. This allows for personalized todo list management.
+# Todo Website
+This repository contains a simple Todo website that can help you understand HTML, CSS, and JavaScript. 
+The website allows users to create and manage their personal and business tasks efficiently.
 
-2. Todo Creation: Once registered, users can easily create new tasks by entering the task name and selecting the category (personal or business). This categorization helps in organizing and prioritizing tasks.
+# Technologies Used
+JavaScript: 52%
+CSS: 29.2%
+HTML: 18.8%
 
-3. Task List Display: The website displays the user's todo list, showing all the tasks in a user-friendly interface. The tasks are grouped into two categories, personal and business, for easy differentiation.
+# Features
+* User Registration: Create an account by entering your name and other details.
+* Todo Creation: Easily create new tasks and categorize them as personal or business.
+* Task List Display: View your todo list with tasks grouped into categories.
+* Edit and Delete Functionality: Edit or delete tasks as needed to keep the list up to date.
+* Save and Persistence: Automatic saving of tasks for seamless user experience.
+* User-Friendly Interface: Intuitive and easy-to-use interface for effective task management.
 
-4. Edit and Delete Functionality: Users have the ability to edit or delete individual tasks as needed. This allows for flexibility and helps in keeping the task list up to date.
+# Usage
+* Clone the repository:
+git clone https://github.com/AugustineTamba/todo-website.git
+View the project here: www.augustine-todo.42web.io
 
-5. Save and Persistence: The user's todo list is automatically saved, ensuring that the tasks are preserved even if the user logs out or closes the website. This persistence feature allows users to resume their work from where they left off.
+# Open the 'index.html' file in your web browser.
 
-User-Friendly Interface: The website offers an intuitive and user-friendly interface, making it easy for users to navigate, add tasks, and manage their todo lists efficiently.
-Overall, this todo website provides a simple and efficient solution for users to enter their name, create and organize their tasks into personal and business categories, and easily edit or delete tasks as needed. It enhances productivity by providing a centralized platform for managing and tracking tasks effectively.
+# Contributing
+Contributions are welcome! If you'd like to contribute to this project, please follow these steps:
+
+1. Fork the repository.
+2. Create a new branch: git checkout -b my-feature-branch.
+3. Make your changes and commit them: git commit -m 'Add some feature'.
+4. Push to the branch: git push origin my-feature-branch.
+5. Submit a pull request.
+
+# License
+This project is licensed under the MIT License. Feel free to use and modify the code as per the terms of the license.
+
+# Credits
+This Todo website was created by Augustine Saah Tamba.
+
+Contact
+If you have any questions or feedback, please feel free to reach out via satamba15@gmail.com.
+
+Happy task management!
 
 View the project here: www.augustine-todo.42web.io
