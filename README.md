@@ -1,7 +1,7 @@
 ![todoweb](https://github.com/AugustineTamba/Todo-List/assets/51299834/403a350c-49d7-41a0-8a7f-e86d6c21ff93)
 
 
-View the project here: www.augustine-todo.42web.io
+View the project here: (https://augustine-todolist.netlify.app/)
 
 # Todo Website
 This repository contains a simple Todo website that can help you understand HTML, CSS, and JavaScript. 
@@ -23,7 +23,7 @@ HTML: 18.8%
 # Usage
 * Clone the repository:
 git clone https://github.com/AugustineTamba/todo-website.git
-View the project here: www.augustine-todo.42web.io
+View the project here: https://augustine-todolist.netlify.app/
 
 # Open the 'index.html' file in your web browser.
 
@@ -47,4 +47,4 @@ If you have any questions or feedback, please feel free to reach out via satamba
 
 Happy task management!
 
-View the project here: www.augustine-todo.42web.io
+View the project here: (https://augustine-todolist.netlify.app/)
